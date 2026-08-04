@@ -1,0 +1,20 @@
+class Solution {
+    static boolean isPrime(int n) {
+        // code here
+        int c=0;
+        if(n==1){
+            return false;
+        }
+        for(int i=1;i<=n;i++){
+            if(n%i==0){
+                c++;
+            }
+        }
+        if(c>2){
+            return false;
+        }
+        else{
+            return true;
+        }
+    }
+}
